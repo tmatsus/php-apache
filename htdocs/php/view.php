@@ -3,6 +3,7 @@
   $password = getenv('MYSQL_ROOT_PASSWORD');
   $password = '';
   $dbName = 'chapter6_db';
+             chapter6_db
   $dbServer = getenv('DB_SERVER');
   $host = 'mysql3:8889';
   $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
@@ -19,13 +20,14 @@
     <div>
       <?php
       try{
-        echo "0¥n";
+        echo "0";
+        echo "<br />";
         echo $dsn;
-        echo "¥n";
+        echo "<br />";
         echo $user;
-        echo "¥n";
+        echo "<br />";
         echo $password;
-        echo "¥n";
+        echo "<br />";
         
         $pdo = new PDO( $dsn , $user , $password );
         echo "1";
@@ -56,8 +58,12 @@
         echo "</tbody>";
         echo "</table>";
       } catch( Exception $e ) {
+        echo "error";
+        echo "<br />";
         echo $e->getMessage();
+        echo "<br />";
         echo $dsn;
+        echo "<br />";
         echo "<font size=5>" , "レコード一覧の取得に失敗しました" , "</font>";
         echo '<p><a href="../index.html">戻る</a></p>';
         exit();

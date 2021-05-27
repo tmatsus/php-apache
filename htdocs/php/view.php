@@ -1,10 +1,10 @@
 <?php
   $user = 'root';
   $password = getenv('MYSQL_ROOT_PASSWORD');
-  $password = 'root';
+  #$password = 'root';
   $dbName = 'chapter6_db';
   $dbServer = getenv('DB_SERVER');
-  $host = 'mysql3:8889';
+  $host = 'mysql3:8880';
   $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
   #$dsn = "mysql:host={$host};port=8889;dbname={$dbName};charset=utf8mb4";
   #$dsn = 'mysql:dbname='.DB_NAME.';host='.DB_HOST.';port='.DB_PORT;

@@ -5,8 +5,8 @@
   $dbName = 'chapter6_db';
   $dbServer = getenv('DB_SERVER');
   $host = 'mysql3';
-  #$dsn = "mysql:host={$host};dbname={$dbName};charset=utf8mb4";
-  $dsn = "mysql:host={$host};port=8889;dbname={$dbName};charset=utf8mb4";
+  $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
+  #$dsn = "mysql:host={$host};port=8889;dbname={$dbName};charset=utf8mb4";
   #$dsn = 'mysql:dbname='.DB_NAME.';host='.DB_HOST.';port='.DB_PORT;
 ?>
 

@@ -5,7 +5,7 @@
   $dbName = 'chapter6_db';
   $dbServer = getenv('DB_SERVER');
   $host = 'mysql3:3306';
-  $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
+  $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8mb4";
   #$dsn = "mysql:host={$host};port=8889;dbname={$dbName};charset=utf8mb4";
   #$dsn = 'mysql:dbname='.DB_NAME.';host='.DB_HOST.';port='.DB_PORT;
 ?>
@@ -30,8 +30,8 @@
         echo $password;
         echo "<br />";
         
-        #$pdo = new PDO( $dsn , $user , $password );
-        $pdo = new PDO( 'mysql:host=mysql3:3306;dbname=chapter6_db;charset=utf8' , 'root' , 'root' );
+        $pdo = new PDO( $dsn , $user , $password );
+        #$pdo = new PDO( 'mysql:host=mysql3:3306;dbname=chapter6_db;charset=utf8' , 'root' , 'root' );
         
         
         echo "1";

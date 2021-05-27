@@ -1,6 +1,5 @@
 <?php
-  #$user = 'root';
-  $user = getenv('MYSQL_ROOT_USER');
+  $user = 'root';
   $password = getenv('MYSQL_ROOT_PASSWORD');
   #$password = 'root';
   $dbName = 'chapter6_db';

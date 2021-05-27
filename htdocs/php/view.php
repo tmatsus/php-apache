@@ -12,7 +12,8 @@
 <head>
   <meta charset="utf-8">
   <title>レコード一覧</title>
-  $dsn
+  {$dsn}
+  {$password}
 </head>
 <body>
   <center>

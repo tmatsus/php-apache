@@ -12,14 +12,14 @@
 <head>
   <meta charset="utf-8">
   <title>レコード一覧</title>
-  "{$dsn}"
-  "{$password}"
 </head>
 <body>
   <center>
     <div>
       <?php
       try{
+        var_dump($dsn);
+        var_dump($password);
         $pdo = new PDO( $dsn , $user , $password );
         $pdo->setAttribute( PDO::ATTR_EMULATE_PREPARES , false );
         $pdo->setAttribute( PDO::ATTR_ERRMODE , PDO::ERRMODE_EXCEPTION );

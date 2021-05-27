@@ -18,8 +18,7 @@
     <div>
       <?php
       try{
-        var_dump($dsn);
-        var_dump($password);
+        echo "0";
         $pdo = new PDO( $dsn , $user , $password );
         echo "1";
         $pdo->setAttribute( PDO::ATTR_EMULATE_PREPARES , false );

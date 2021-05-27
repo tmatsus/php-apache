@@ -3,8 +3,8 @@
   $password = getenv('MYSQL_ROOT_PASSWORD');
   $dbName = 'chapter6_db';
   $dbServer = getenv('DB_SERVER');
-  $host = 'mysql:8889';
-  $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
+  $host = 'mysql3:8889';
+  $dsn = "mysql3:host={$host};dbname={$dbName};charset=utf8";
 ?>
 
 <!DOCTYPE html>

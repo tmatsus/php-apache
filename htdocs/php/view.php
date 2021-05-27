@@ -2,7 +2,7 @@
   $user = 'root';
   #$password = getenv('MYSQL_ROOT_PASSWORD');
   $password = 'root';
-  $dbName = 'chapter6_dba';
+  $dbName = 'chapter6_db';
   $dbServer = getenv('DB_SERVER');
   $host = 'mysql3:8889';
   $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
@@ -30,7 +30,10 @@
         echo $password;
         echo "<br />";
         
-        $pdo = new PDO( $dsn , $user , $password );
+        #$pdo = new PDO( $dsn , $user , $password );
+        $pdo = new PDO( 'mysql:host=mysql3:8889;dbname=chapter6_dba;charset=utf8' , 'root' , 'root' );
+        
+        
         echo "1";
         $pdo->setAttribute( PDO::ATTR_EMULATE_PREPARES , false );
         $pdo->setAttribute( PDO::ATTR_ERRMODE , PDO::ERRMODE_EXCEPTION );

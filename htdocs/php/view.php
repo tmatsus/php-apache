@@ -25,8 +25,12 @@
         $pdo->setAttribute( PDO::ATTR_ERRMODE , PDO::ERRMODE_EXCEPTION );
         $sql = "SELECT * FROM table1";
         $stm = $pdo->prepare( $sql );
+        var_dump($dsn);
+        var_dump($password);
         $stm->execute();
         $result = $stm->fetchAll( PDO::FETCH_ASSOC );
+        var_dump($dsn);
+        var_dump($password);
         echo "<table>";
         echo "<thead><tr>";
         echo "<th>" , "ID" , "</th>";

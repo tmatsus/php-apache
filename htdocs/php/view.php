@@ -31,7 +31,7 @@
         echo "<br />";
         
         #$pdo = new PDO( $dsn , $user , $password );
-        $pdo = new PDO( 'mysql:host=mysql5:8889;dbname=chapter6_db;charset=utf8' , 'root' , 'root' );
+        $pdo = new PDO( 'mysql:host=mysql3:3306;dbname=chapter6_db;charset=utf8' , 'root' , 'root' );
         
         
         echo "1";

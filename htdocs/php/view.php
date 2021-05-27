@@ -1,6 +1,7 @@
 <?php
   $user = 'root';
   $password = getenv('MYSQL_ROOT_PASSWORD');
+  $password = '';
   $dbName = 'chapter6_db';
   $dbServer = getenv('DB_SERVER');
   $host = 'mysql3:8889';
@@ -18,7 +19,14 @@
     <div>
       <?php
       try{
-        echo "0";
+        echo "0¥n";
+        echo $dsn;
+        echo "¥n";
+        echo $user;
+        echo "¥n";
+        echo $password;
+        echo "¥n";
+        
         $pdo = new PDO( $dsn , $user , $password );
         echo "1";
         $pdo->setAttribute( PDO::ATTR_EMULATE_PREPARES , false );

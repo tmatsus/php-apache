@@ -1,7 +1,7 @@
 <?php
   $user = 'root';
   $password = getenv('MYSQL_ROOT_PASSWORD');
-  $password = '';
+  $password = 'root';
   $dbName = 'chapter6_db';
   $dbServer = getenv('DB_SERVER');
   $host = 'mysql3:8889';
